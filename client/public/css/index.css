@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Mulish:wght@400;500;600;700;800&display=swap');
+
+/*Variables*/
+:root{
+    /*Fonts*/
+    --Mulish: 'Mulish', sans-serif;
+    --Baloo: 'Baloo Da 2', cursive;
+    /*Numbers*/
+    --100: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    /*font-family: ;*/
+    scroll-behavior: smooth;
+    font-size: 10px;
+    background-color: #F1F1F1;
+}
+
+header{
+    width: 100vw;
+    height: 100vh; 
+    position: relative;
+    overflow: hidden;
+}
+
+header nav.navBar{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+header nav.navBar section.logo{
+    width: 4.5rem;
+    margin: .3rem .5rem .2rem;
+}
+
+img#logoImage{
+    width: 100%;
+}
+
+.btn{
+    display: block;
+    width: 10%;
+    height: 30px;
+    border-radius: 7px;
+    margin: .5rem .5rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    font-family: var(--Mulish);
+    cursor: pointer;
+}
+
+.btnWhite{
+    background-color: #f5f5f5;
+}
+
+.btnWhite:hover{
+    background-image: linear-gradient(to right,#790FBF,#730DD9);
+    color: #F5F5F5;
+    font-weight: 700;
+}
+
+header nav.navBar ul.items{
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: var(--Mulish);
+    font-size: 1.25rem;
+}   
+
+li.item{
+    padding: .5rem 1rem;
+}
+
+li.item a {
+    color: #050505;
+    font-weight: 700;
+}
+
+li.item a:hover{
+    border-bottom: .15rem solid #790FBF;
+}
+
+header section#bakcground{
+    width: var(--100);
+    height: var(--100); 
+    overflow: hidden;  
+    background-color: rgba(0, 0, 0, 1);
+}
+
+header section#bakcground img#backImage{
+    width: var(--100);
+    height: var(--100);
+    object-fit: cover;
+    opacity: 1;
+}
+
+section#textTitle{
+    position: absolute;
+    color: #f5f5f5;
+    top: 35%;
+    left: 2rem;
+}
+
+header section#textTitle h1{
+    font-family: var(--Baloo);
+    font-size: 3.5rem;
+}
+
+header section#textTitle h3{
+    font-family: var(--Mulish);
+    font-size: 1.8rem;
+}

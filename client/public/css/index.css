@@ -26,6 +26,7 @@ body{
     background-color: #F1F1F1;
 }
 
+/*Start Header*/
 header{
     width: 100vw;
     height: 100vh; 
@@ -121,3 +122,123 @@ header section#textTitle h3{
     font-family: var(--Mulish);
     font-size: 1.8rem;
 }
+
+/*End Header*/
+/*Start Login*/
+#login{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#model{
+    width: 60%;
+    height: var(--100);
+}
+
+#model section.modelContent{
+    width: var(--100);
+    height: var(--100);
+}
+
+#model section.modelContent img.modelLogin{
+    /*Essa img deve ficar invisuvel na metade da tela*/
+    width: var(--100);
+    height: var(--100);
+    overflow: hidden;
+}
+
+#userLogin {
+    width: 40%;
+    height: var(--100);
+    background-image: linear-gradient(to right,#790FBF,#730DD9);
+    position: relative;
+}
+
+#userLogin form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-radius: 25px;
+    width: 90%;
+    height: 95%;
+    margin: 1rem auto; 
+}
+
+#userLogin form h3{
+    color: #050505;
+    font-family: var(--Baloo);
+    font-size: 3.5rem;
+    margin: 5rem auto 1rem;
+}
+
+#userLogin form .inputGroup{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+#userLogin form input{
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 3rem;
+    width: 5rem;
+    font-family: var(--Mulish);
+    font-size: 1.5rem;
+    border-bottom: 1px dashed #636363;
+    margin: 2rem 0;
+}
+
+#userLogin form label.inputText{
+    font-family: var(--Baloo);
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-size: 1.5rem;
+    color: #636363;
+    text-transform: uppercase;
+    transition: all 0.1s;
+}
+
+#userLogin form input:valid ~ .inputText{
+    top: -1rem;
+    font-size: 1rem;
+}
+
+
+#userLogin form input, button{
+    width: 50%;
+    margin: .5rem auto;
+}
+
+#userLogin form button#btnlogin{
+    width: 50%;
+    height: 50px;
+    background-image: linear-gradient(to right,#790FBF,#730DD9);
+    color: #F5F5F5;
+    font-weight: 700;
+    margin: 10% auto 20%;
+}
+
+hgroup.links{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+hgroup.links a{
+    color: #790FBF;
+    font-family: var(--Mulish);
+    font-size: 1rem;
+}
+
+hgroup.links a:hover{
+    color: #730DD9;
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+/*End Login*/
